@@ -1,0 +1,16 @@
+dubbo:
+  application:
+    name: client
+    owner: carter
+  registry:
+    address: zookeeper://127.0.0.1:2181
+    check: true
+    group: dubbo-study
+    simplified: true
+  metadata-report:
+    address: zookeeper://127.0.0.1:2181
+    retry-times: 30
+    cycle-report: false
+    group: dubbo-study
+  scan:
+    base-packages: com.dubbo.study.client
